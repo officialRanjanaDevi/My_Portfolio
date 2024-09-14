@@ -1,0 +1,5 @@
+.navbtn{
+    @apply  font-bold transition-transform duration-700 ease-in-out 
+    hover:scale-110 hover:from-sky-500 hover:to-violet-900 hover:bg-gradient-to-r  
+    px-4 py-2 rounded-lg
+}
