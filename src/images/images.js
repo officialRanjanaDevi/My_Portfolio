@@ -12,7 +12,9 @@ import php from "./php.png"
 import react from "./react.png"
 import sql from "./sql.png"
 import tail from "./tail.png"
-
+import aps from "./aps.png"
+import hnb from "./hnb.png"
+import mood from "./mood.png"
 export const images = {
   my,
   HTML,
@@ -28,4 +30,7 @@ export const images = {
   react,
   sql,
   tail,
+  mood,
+  aps,
+  hnb
 };

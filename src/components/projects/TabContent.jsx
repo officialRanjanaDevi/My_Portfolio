@@ -18,9 +18,9 @@ const TabContent = ({ value }) => {
     <div className=''>
     {filteredProjects.map((project, index) => (
       <div key={index} className={`border-none xl:p-8 lg:p-4 md:p-4 sm:p-8  my-12  flex flex-wrap-reverse justify-evenly ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
-        <div className='text-gray-400 text-left w-3/4  sm:w-3/5 md:w-1/3 lg:w-1/3 xl:w-1/4 text-sm tracking-wider leading-5'>
+        <div className='text-gray-400 text-justify w-3/4  sm:w-3/5 md:w-1/3 lg:w-1/3 xl:w-1/4 text-sm tracking-wider leading-5'>
           <h2 className='text-xl text-white'>{project.title}</h2>
-          <p>{project.description}</p>
+          <p >{project.description}</p>
           <h2 className='my-2'>Technology Stack used :-</h2>
           <ul> {project.stack.map((tech, index) => ( 
             <li className=' my-0.5'><KeyboardArrowRightRoundedIcon className='text-slate-500 rounded-md border-2 border-slate-500'></KeyboardArrowRightRoundedIcon> &nbsp;{tech}</li>

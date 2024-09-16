@@ -5,6 +5,7 @@ import AboutMe from './components/aboutme/AboutMe'
 import Project from './components/projects/Project'
 import Skills from './components/Skill/Skills'
 import Experience from './components/experience/experience'
+import Service from './components/services/Service'
 const App = () => {
   return (
     <div className='balsamiq-sans-regular'>
@@ -19,6 +20,8 @@ const App = () => {
       <Skills/>
       
       <Experience/>
+
+      <Service/>
     </div>
   )
 }
