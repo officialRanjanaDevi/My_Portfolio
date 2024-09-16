@@ -76,17 +76,37 @@ const pages = ["Home", "About Me", "Projects","Skills","Experience"];
 const label = { inputProps: { 'aria-label': 'Switch demo' } };
 function Navbar() {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
-
+   
     const handleOpenNavMenu = (event) => {
+        console.log("hello");
         setAnchorElNav(event.currentTarget);
     };
     const handleCloseNavMenu = () => {
+       console.log("bye");
         setAnchorElNav(null);
     };
+    
+    const [darkMode, setDarkMode] = React.useState(true);
 
+  // Toggle function
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode); // Toggle between light and dark mode
+    if (!darkMode) {
+      console.log("dark mode");
+      document.body.classList.add('dark'); // Apply dark mode class
+      let imgdiv=document.querySelector(".imgDiv");
+      imgdiv.style.boxShadow="0px 0px 80px rgb(125 211 252)";
+      
+    } else {
+      console.log("light mode");
+      document.body.classList.remove('dark'); 
+      let imgdiv=document.querySelector(".imgDiv");
+      imgdiv.style.boxShadow="10px 0px 80px black";// Remove dark mode class
+    }
+  };
     
     return (
-        <AppBar position="static" sx={{backgroundColor:"transparent",boxShadow:"none" }}>
+        <AppBar position="static" sx={{backgroundColor:"transparent", boxShadow:"1px 0px 2px #aaa"}}>
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
                                      
@@ -133,14 +153,14 @@ function Navbar() {
                                  className="navbtn balsamiq-sans-regular"
                                 key={page}
                                 onClick={handleCloseNavMenu}
-                                sx={{ m: 2, display: "block",color:"white"  }}
+                                sx={{ m: 2, display: "block", color:darkMode==true?"rgb(241 245 241)":"rgb(40 40 40)" ,fontWeight:"600" }}
                             >
                                 {page}
                             </Button>
                         ))}
                     </Box>
                     <FormControlLabel
-        control={<MaterialUISwitch sx={{ m: 0 }} defaultChecked />}/>
+                     control={<MaterialUISwitch sx={{ m: 0 }} defaultChecked onChange={toggleDarkMode}/>}/>
                     <Box sx={{ flexGrow: 0 }}>
                         <Tooltip title="GitHub account!" >
                             <IconButton >
@@ -149,6 +169,7 @@ function Navbar() {
                         </Tooltip>
                         
                     </Box>
+
                 </Toolbar>
             </Container>
         </AppBar>

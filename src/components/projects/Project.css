@@ -1,0 +1,11 @@
+.imgBox{
+    @apply outline outline-4 outline-offset-2  outline-sky-400 rounded-sm;
+    
+}
+.img{
+    @apply rounded-md  shadow-black -translate-y-3.5 -translate-x-3.5
+}
+.live-btn{
+    @apply w-40  mt-6 h-11 font-bold transition-transform duration-700 ease-in-out hover:scale-110 hover:from-sky-500 
+    hover:to-violet-900 bg-gradient-to-r from-sky-500 to-violet-900 px-4 py-2 rounded-md 
+}
