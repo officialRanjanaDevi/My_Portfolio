@@ -3,7 +3,7 @@
     hover:to-violet-900 bg-gradient-to-r from-sky-500 to-violet-900 px-4 py-2 rounded-md h-11 w-36
 }
 .aboutmeContainer{
-    @apply flex flex-wrap justify-center m-1 p-4 mt-20
+    @apply flex flex-wrap justify-center m-1 p-4 
 
 }
 .imgBox{

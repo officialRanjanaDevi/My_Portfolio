@@ -4,7 +4,7 @@ import { images } from "../../images/images.js";
 import "./Home.css";
 const Home = () => {
   return (
-    <div className="headingDiv">
+    <div className="headingDiv ">
       <div>
         <p className="tracking-widest text-slate-400 text-2xl">I'm a</p>
         <h4 className=" abril-fatface-regular  mainHeading">
