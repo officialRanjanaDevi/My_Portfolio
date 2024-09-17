@@ -4,7 +4,7 @@ import { images } from "../../images/images.js";
 import "./Home.css";
 const Home = () => {
   return (
-    <div className="headingDiv ">
+    <div className="headingDiv sm:h-5/6" id="home">
       <div>
         <p className="tracking-widest text-slate-400 text-2xl">I'm a</p>
         <h4 className=" abril-fatface-regular  mainHeading">
@@ -13,7 +13,10 @@ const Home = () => {
           <br></br>DEVELOPER<span className="software">.</span>
         </h4>
         <button sx={{ color: "white" }} className="linkedin-btn">
+          <a href="https://www.linkedin.com/in/ranjana-devi-58976327b">
           Linked In
+          </a>
+          
         </button>
       </div>
       <div>

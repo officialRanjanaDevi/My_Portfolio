@@ -17,7 +17,7 @@ const Project = () => {
   ];
 
   return (
-    <div className="text-white text-center">
+    <div className="text-white text-center" id="projects">
       <h1 className="mb-10 font-bold text-2xl">Projects</h1>
 
       <Tabs value={value} onChange={handleChange} aria-label="project tabs" centered TabIndicatorProps={{ style: { backgroundColor: "transparent" } }}>

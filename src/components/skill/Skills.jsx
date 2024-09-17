@@ -18,7 +18,7 @@ const Skills = () => {
     ];
 
     return (
-        <div className="text-center m-4 h-lvh ">
+        <div className="text-center m-4 h-lvh " id="skills">
             <h1 className="mb-8 font-bold text-2xl">Skills</h1>
 
             <div className="h-full mt-12 justify-items-center grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-y-6">

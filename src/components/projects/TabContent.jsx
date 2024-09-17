@@ -15,23 +15,22 @@ const TabContent = ({ value }) => {
   console.log(filteredProjects);
   console.log(value);
   return (
-    <div className=''>
-    {filteredProjects.map((project, index) => (
-      <div key={index} className={`border-none xl:p-8 lg:p-4 md:p-4 sm:p-8  my-12  flex flex-wrap-reverse justify-evenly ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
-        <div className='text-gray-400 text-justify w-3/4  sm:w-3/5 md:w-1/3 lg:w-1/3 xl:w-1/4 text-sm tracking-wider leading-5'>
+    <div>{filteredProjects.map((project, index) => (
+      <div key={index} className={`card-div  ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
+        <div className='card-text w-3/4  sm:w-3/5 md:w-1/3 lg:w-1/3 xl:w-1/4'>
           <h2 className='text-xl text-white'>{project.title}</h2>
           <p >{project.description}</p>
           <h2 className='my-2'>Technology Stack used :-</h2>
           <ul> {project.stack.map((tech, index) => ( 
-            <li className=' my-0.5'><KeyboardArrowRightRoundedIcon className='text-slate-500 rounded-md border-2 border-slate-500'></KeyboardArrowRightRoundedIcon> &nbsp;{tech}</li>
+            <li className=' my-0.5'><KeyboardArrowRightRoundedIcon className='icon'></KeyboardArrowRightRoundedIcon> &nbsp;{tech}</li>
           ))}
             
           </ul>
           <button className='live-btn text-white'><a  href={project.livelink} >Live Link</a></button>
         </div>
   
-        <div className='ransition-transform duration-1000 ease-in-out hover:scale-110 h-3/5 w-3/5 sm:w-3/5  md:w-1/3 lg:1/3 xl:w-1/4 imgBox'>
-          <img src={images.my} alt="alt" className=' img h-full w-full'/>
+        <div className=' sm:w-3/5  md:w-1/3 lg:1/3 xl:w-1/4 imgBox'>
+          <img src={images.my} alt="alt" className='img h-full w-full'/>
         </div>
       </div>
     ))}

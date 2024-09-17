@@ -3,7 +3,7 @@
     hover:to-violet-900 bg-gradient-to-r from-sky-500 to-violet-900 px-4 py-2 rounded-md h-11 w-36
 }
 .headingDiv{
-    @apply h-screen p-4 m-4 sm:m-1 md:mt-24 flex flex-wrap  justify-around 
+    @apply h-screen  p-4 m-4 sm:m-1 md:my-20 flex flex-wrap  justify-around 
 }
 .mainHeading{
     @apply 2xl:text-8xl xl:text-8xl lg:text-7xl md:text-6xl text-5xl font-black tracking-widest mb-4

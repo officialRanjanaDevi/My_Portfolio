@@ -7,9 +7,15 @@
 
 }
 .imgBox{
-    @apply h-48   m-4 outline outline-4 outline-offset-4  outline-sky-400 rounded-sm;
+    @apply  m-4 outline outline-4 outline-offset-4  outline-sky-400 rounded-sm;
     
 }
 .img{
     @apply h-full rounded-md  shadow-black -translate-y-3.5 -translate-x-3.5
+}
+.text{
+   @apply mb-4 px-4 text-gray-400 text-left
+}
+.text-box{
+    @apply h-96 m-4 sm:w-2/4 w-full text-center
 }

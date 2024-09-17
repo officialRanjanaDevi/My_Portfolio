@@ -15,6 +15,12 @@ import tail from "./tail.png"
 import aps from "./aps.png"
 import hnb from "./hnb.png"
 import mood from "./mood.png"
+import git from "./git.png"
+import gfg from "./gfg.png"
+import lc from "./lc.png"
+import insta from "./insta.png"
+import youtube from "./youtube.png"
+import linkedin from "./linkedin.png"
 export const images = {
   my,
   HTML,
@@ -32,5 +38,11 @@ export const images = {
   tail,
   mood,
   aps,
-  hnb
+  hnb,
+  linkedin,
+  insta,
+  lc,
+  gfg,
+  git,
+  youtube
 };
