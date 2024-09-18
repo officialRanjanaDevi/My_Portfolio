@@ -21,8 +21,17 @@ import lc from "./lc.png"
 import insta from "./insta.png"
 import youtube from "./youtube.png"
 import linkedin from "./linkedin.png"
+import fd from "./fd.jpg"
+import fsd from "./fsd.jpg"
+import yu from "./yu.jpg"
+import todo from "./todo.png"
+import wanderlust from "./wanderlust.png"
+import weather from "./weather.png"
+import bike from "./bike.png"
+import about from "./about.jpg"
 export const images = {
   my,
+  about,
   HTML,
   CSS,
   js,
@@ -44,5 +53,10 @@ export const images = {
   lc,
   gfg,
   git,
-  youtube
+  youtube,
+  yu,fd,fsd,
+  todo,
+  weather,
+  wanderlust,
+  bike
 };

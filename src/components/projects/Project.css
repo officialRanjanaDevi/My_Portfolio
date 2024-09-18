@@ -10,10 +10,10 @@
     hover:to-violet-900 bg-gradient-to-r from-sky-500 to-violet-900 px-4 py-2 rounded-md 
 }
 .card-div{
-   @apply border-none xl:p-8 lg:p-4 md:p-4 sm:p-8  my-12  flex flex-wrap-reverse justify-evenly
+   @apply border-none xl:p-8 lg:p-4 md:p-4 sm:p-8  mb-12  flex flex-wrap-reverse justify-evenly
 }
 .card-text{
-    @apply text-gray-400 text-justify  text-sm tracking-wider leading-5
+    @apply  text-justify  text-sm tracking-wider leading-5
 }
 .icon{
     @apply text-slate-500 rounded-md border-2 border-slate-500

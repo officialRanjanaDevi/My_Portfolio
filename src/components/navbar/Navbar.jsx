@@ -133,27 +133,27 @@ function Navbar() {
           {/* Desktop Menu */}
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex", justifyContent: "center" } }}>
             {pages.map((page) => (
-              <Button
-               className="navbtn"
+              <button
+                className={`navbtn ${darkMode ? 'text-white' : 'text-black'}`}
                 key={page.title}
                 onClick={handleCloseNavMenu}
-                sx={{ m: 2, display: "block", color: darkMode ? "rgb(241 245 241)" : "rgb(40 40 40)", fontWeight: "600" }}
+                sx={{ m: 2, display: "block" }}
               >
                 <a href={page.link}>{page.title}</a>
-              </Button>
+              </button>
             ))}
           </Box>
 
           {/* Dark Mode Switch */}
           <FormControlLabel
-            control={<MaterialUISwitch sx={{ m: 0 }} defaultChecked onChange={toggleDarkMode} />}
+            control={<MaterialUISwitch sx={{ m: 0 }} checked={darkMode} onChange={toggleDarkMode} />}
           />
 
           {/* Avatar */}
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="View GitHub account!">
               <Button className="git-btn">
-                <a className="text-white">Git Hub</a>
+                <a href="https://github.com/officialRanjanaDevi" className="text-white">GitHub</a>
               </Button>
             </Tooltip>
           </Box>

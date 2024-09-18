@@ -11,23 +11,25 @@ const Project = () => {
   };
 
   const tabs = [
-    { key: 'Full Stack', head: 'Full Stack Projects' },
     { key: 'Front End', head: 'Frontend Projects' },
+    { key: 'Full Stack', head: 'Full Stack Projects' },
+  
     { key: 'DSA', head: 'DSA Challenges' }
   ];
 
   return (
-    <div className="text-white text-center" id="projects">
-      <h1 className="mb-10 font-bold text-2xl">Projects</h1>
+    <div className=" text-center" id="projects">
+      <h1 className="mb-4 font-bold text-2xl">Projects</h1>
 
       <Tabs value={value} onChange={handleChange} aria-label="project tabs" centered TabIndicatorProps={{ style: { backgroundColor: "transparent" } }}>
         {tabs.map((tab, index) => (
           <Tab
             key={index}
             label={tab.key}
-            className='border-none'
+            className='border-none '
             sx={{
-              color: index === value ? "blue" : "white"
+              fontWeight:600,
+              color: index === value ? "blue" : "#aaa"
             }}
           />
         ))}
