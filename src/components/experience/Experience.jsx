@@ -19,7 +19,7 @@ const Experience = () => {
             <div className="sm:text-center md:text-left mx-8 w-5/6 md:w-2/5">
               <h1 className="text-lg font-bold">Frontend Developer(aug-2023 oct-2023)</h1>
               <p className="mb-3 text-gray-400">Acmegrade, Mood Indigo (IIT Bombay)</p>
-              <a href="" className="view">View Credentails < LaunchRoundedIcon /></a> 
+              <a href="https://docs.google.com/document/d/1WtA-t3JP7z5SXXdOxacszssU1K4m0KvoX6qej6tND4s/edit?usp=sharing" className="view">View Credentails < LaunchRoundedIcon /></a> 
             </div>
           </motion.li>
           <motion.li   variants={fadeIn("up", 0.1)}
