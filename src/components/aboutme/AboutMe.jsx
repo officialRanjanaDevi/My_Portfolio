@@ -24,7 +24,8 @@ const AboutMe = () => {
           together!
         </p>
         <button sx={{ color: "white" }} className="resume-btn ml-8">
-          Resume
+          <a href="https://drive.google.com/file/d/1c5V0TYoriAWTtZ2_57uFLu7r0D9VEQla/view?usp=sharing">Resume</a>
+          
         </button>
       </div>
     </motion.div>
