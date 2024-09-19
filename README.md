@@ -32,6 +32,10 @@ It showcases my work, skills, and contact details, with animations and integrate
    - Go to [EmailJS](https://www.emailjs.com/) and create an account.
    - Generate an **EmailJS Service ID**, **Template ID**, and **Public Key**.
    - Add these as environment variables in your project by creating .env file :
+   -   REACT_APP_EMAILJS_SERVICE_ID=your-service-id
+   -   REACT_APP_EMAILJS_TEMPLATE_ID=your-template-id
+   -   REACT_APP_EMAILJS_PUBLIC_KEY=your-public-key
+
    - **Template ID:**
      <img src="./template-ss.png" alt="Alt text" width="500">
      
@@ -40,10 +44,7 @@ It showcases my work, skills, and contact details, with animations and integrate
      
    - **Public Key:** from your account
 
-     REACT_APP_EMAILJS_SERVICE_ID=your-service-id
-     REACT_APP_EMAILJS_TEMPLATE_ID=your-template-id
-     REACT_APP_EMAILJS_PUBLIC_KEY=your-public-key
-
+    
    - Create a `.env` file in the root of your project and paste the above variables.
 
 5. For further help with **EmailJS** setup, you can watch this video: [EmailJS Setup Guide](https://youtu.be/wWiTouBHibs?si=TkENN8BdpGdX30jb)
