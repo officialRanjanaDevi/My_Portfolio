@@ -21,7 +21,7 @@ It showcases my work, skills, and contact details, with animations and integrate
 
 ## Installation and Setup
 
-1. Clone the repository: git clone https://github.com/yourusername/portfolio.git
+1. Clone the repository: git clone https://github.com/officialRanjanaDevi/portfolio.git
 
 2. Navigate to the project folder: cd portfolio
 
