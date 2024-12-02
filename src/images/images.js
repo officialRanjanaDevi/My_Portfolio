@@ -29,6 +29,7 @@ import wanderlust from "./wanderlust.png"
 import weather from "./weather.png"
 import bike from "./bike.png"
 import about from "./about.jpg"
+import quiz from "./quiz.png"
 export const images = {
   my,
   about,
@@ -36,6 +37,7 @@ export const images = {
   CSS,
   js,
   java,
+  quiz,
   dsa,
   bootstrap,
   express,

@@ -27,8 +27,20 @@ const TabContent = ({ value }) => {
       livelink: "https://to-do-app-if8g.onrender.com",
       imglink: images.todo,
     },
+ 
+   
     {
       key: "three",
+      type: "Full Stack",
+      title: "Bike Rental Website",
+      stack: ["React Js", "Node Js", "Express Js", "Mongo DB", "Bootstrap","Tailwind Css","Material UI"],
+      description:
+        "Functional Bike rental service with admin dashboard and user-friendly Interface with integrated Payment Gateway. Client can browse and book bikes after being registered also can contact to admin.",
+      livelink: "https://rent-motors-frontend.vercel.app/",
+      imglink: images.bike ,
+    },
+    {
+      key: "four",
       type: "Full Stack",
       title: "Wanderlust",
       stack: [
@@ -46,21 +58,20 @@ const TabContent = ({ value }) => {
       imglink: images.wanderlust,
     },
     {
-      key: "four",
-      type: "Full Stack",
-      title: "Bike Rental Website",
-      stack: ["HTML", "CSS", "Javascript", "PHP", "Bootstrap"],
+      key: "five",
+      type: "Front End",
+      title: "Quiz App",
+      stack: ["React", "NodeJs", "Tailwind CSS", "Javascript"],
       description:
-        "Functional Bike rental service with admin dashboard and user-friendly Interface. Client can browse and book bikes after being registered also can contact to admin.",
-      livelink: "anerlne,fnsenfn,kenfnewf",
-      imglink: images.bike ,
+        "It is a static site developed using react and data is fetched by Qiuz API.Responsive site with additional counter of 10 minutes and score display at the end of 10 question one per page.",
+      livelink: "https://mc-qgame.vercel.app",
+      imglink:images.quiz,
     },
   ];
 
   // Filter projects where the title matches the value
   const filteredProjects = projects.filter((project) => project.type === value);
-  console.log(filteredProjects);
-  console.log(value);
+
   return (
     <div   >
       {filteredProjects.map((project, index) => (
@@ -96,7 +107,7 @@ const TabContent = ({ value }) => {
             </button>
           </div>
 
-          <div  className=" sm:w-3/5  md:w-1/3 lg:1/3 xl:w-1/4 imgBox">
+          <div  className=" sm:w-3/5  md:w-1/3 lg:1/3 xl:w-1/4 h-full imgBox">
             <img src={`${project.imglink}`} alt="alt" className="img h-full w-full" />
           </div>
         </motion.div>
