@@ -69,7 +69,6 @@ const TabContent = ({ value }) => {
     },
   ];
 
-  // Filter projects where the title matches the value
   const filteredProjects = projects.filter((project) => project.type === value);
 
   return (
